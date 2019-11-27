@@ -2,6 +2,10 @@
 
 Vue 移动端 select 组件,适合长 label 级联选择,参考淘宝地址选择
 
+## Source
+
+[https://github.com/hyy126/vue-select-hyy](https://github.com/hyy126/vue-select-hyy)
+
 ## Demo
 
 [http://122.51.194.65:8089/vueselect](http://122.51.194.65:8089/vueselect)
@@ -33,4 +37,5 @@ Vue.use(vueSelect)
 | endSelect | 没有下一层级选择完成的回调 | 该次选择值的数组集合 |
 
 ## Describe
-关于使用的优化及动态数据请求后续更新
+1. 关于使用的优化及动态数据请求后续更新
+2. 更多使用请参考DEMO

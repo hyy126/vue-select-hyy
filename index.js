@@ -4,13 +4,14 @@
  * @author Hyy
  *
  * Created at     : 2019-11-27 12:47:00
- * Last modified  : 2019-11-27 12:48:13
+ * Last modified  : 2019-11-27 13:35:21
  */
 
 let VueCasCadeSelect = require("./src/index.vue");
 VueCasCadeSelect = VueCasCadeSelect.default || VueCasCadeSelect;
+
 if (typeof window !== "undefined") {
-  window.Swiper = Swiper;
+  window.VueCasCadeSelect = VueCasCadeSelect;
 }
 
 const select = {

@@ -56,7 +56,7 @@ import TimePage from "./TimePage";
 import List from "./List";
 
 export default {
-  name: "vue-casCade-select",
+  name: "VueCasCadeSelect",
   props: {
     listTitle: {
       default: "请选择分类",

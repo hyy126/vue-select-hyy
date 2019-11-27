@@ -1,6 +1,6 @@
 {
   "name": "vue-select-hyy",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "description": "vue select 组件 ,适合长label级联选择,参考淘宝地址选择",
   "main": "index.js",
   "scripts": {
