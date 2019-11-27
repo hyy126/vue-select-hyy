@@ -39,11 +39,8 @@
 </template>
 
 <script>
-import VueCasCadeSelect from "./select";
-
 export default {
-  name: "VueSelect",
-  components: { VueCasCadeSelect },
+  name: "VueSelectDemo",
   data() {
     return {
       resList: [],

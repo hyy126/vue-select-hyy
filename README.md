@@ -19,6 +19,12 @@ import vueSelect from "vue-select-hyy"
 Vue.use(vueSelect)
 ```
 
+## caution
+
+1. vue version must > 2.6
+   
+2. because we use v-slot feature
+   
 ## Attributes
 
 | 参数          | 说明         | 类型    | 可选值     | 默认值                                            | 必填 |
@@ -32,10 +38,29 @@ Vue.use(vueSelect)
 
 
 ## Events
+
 | 事件名称  | 说明                       | 回调参数             |
 | :-------- | :------------------------: | -------------------: |
 | endSelect | 没有下一层级选择完成的回调 | 该次选择值的数组集合 |
 
+## Custom List Style
+
+```javascript
+<!-- custom style -->
+<template #list={curList,activeValue}>
+    <ul>
+        <li
+            v-for="item in curList"
+            :class="{'active':activeValue===item.value}"
+            :key="item.name"
+            @click="changeValue(item)"
+        >{{item.surplus}} - {{item.value}} - {{item.label}}</li>
+    </ul>
+</template>
+```
+
 ## Describe
+
 1. 关于使用的优化及动态数据请求后续更新
+   
 2. 更多使用请参考DEMO
