@@ -1,0 +1,25 @@
+{
+  "name": "vue-select-hyy",
+  "version": "1.0.0",
+  "description": "vue select 组件 ,适合长label级联选择,参考淘宝地址选择",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyy126/vue-select-hyy.git"
+  },
+  "homepage": "https://github.com/hyy126/vue-select-hyy#readme",
+  "keywords": [
+    "vue",
+    "select",
+    "mobile",
+    "淘宝地址选择"
+  ],
+  "author": "hyy",
+  "license": "ISC",
+  "dependencies": {
+    "better-scroll": "^1.15.2"
+  }
+}
