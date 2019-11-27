@@ -63,45 +63,44 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style  scoped>
 .selector-list-wrapper {
   background: rgba(237, 237, 237, 0.2);
   height: 100%;
-
-  .title {
-    color: #ccc;
-    font-size: 0.8rem;
-    height: 1.6rem;
-    line-height: 1.6rem;
-    padding-left: 1rem;
-  }
-  .bscroll {
-    height: calc(~"100% - 1.6rem");
-    overflow: hidden;
-    .single-item-wrapper {
-      min-height: 100.5%;
-      .single-item {
-        padding-left: 2rem;
-        height: 3rem;
-        line-height: 3rem;
-        display: flex;
-
-        &.active {
-          background: #fff;
-          color: @orangewarningColor;
-        }
-        span {
-          flex: 1;
-          .ellipsis();
-        }
-
-        .iconcheck {
-          width: 4rem;
-          padding-left: 1rem;
-          font-size: 1.3rem;
-        }
-      }
-    }
-  }
+}
+.selector-list-wrapper .title {
+  color: #ccc;
+  font-size: 0.8rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  padding-left: 1rem;
+}
+.selector-list-wrapper .bscroll {
+  height: calc(100% - 1.6rem);
+  overflow: hidden;
+}
+.selector-list-wrapper .bscroll .single-item-wrapper {
+  min-height: 100.5%;
+}
+.selector-list-wrapper .bscroll .single-item-wrapper .single-item {
+  padding-left: 2rem;
+  height: 3rem;
+  line-height: 3rem;
+  display: flex;
+}
+.selector-list-wrapper .bscroll .single-item-wrapper .single-item.active {
+  background: #fff;
+  color: #ea4c00;
+}
+.selector-list-wrapper .bscroll .single-item-wrapper .single-item span {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.selector-list-wrapper .bscroll .single-item-wrapper .single-item .iconcheck {
+  width: 4rem;
+  padding-left: 1rem;
+  font-size: 1.3rem;
 }
 </style>

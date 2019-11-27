@@ -1,5 +1,8 @@
 <template>
-  <section class="bscroll" ref="bscroll">
+  <section
+    class="bscroll"
+    ref="bscroll"
+  >
     <slot></slot>
   </section>
 </template>
@@ -35,5 +38,5 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style scoped>
 </style>

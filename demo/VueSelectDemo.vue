@@ -160,53 +160,59 @@ export default {
 };
 </script>
 
-<style lang='less'  scoped>
+<style  scoped>
 .personType-wrapper {
   display: flex;
   flex-wrap: wrap;
   height: auto;
   width: 100%;
   padding: 10% 1rem;
-  li {
-    padding-left: 2rem;
-    height: 3rem;
-    line-height: 3rem;
-    .ellipsis();
-    &.active {
-      background: #fff;
-      color: @orangewarningColor;
-    }
-  }
-  .single-persontype {
-    box-sizing: border-box;
-    max-width: 100%;
-    position: relative;
-    height: 1.6rem;
-    line-height: 1.6rem;
-    padding: 0 0.5rem 0 1rem;
-    border-radius: 0.8rem;
-    background: #a8b4c4;
-    color: #fff;
-    margin-right: 1rem;
-    margin-bottom: 0.6rem;
-    .flexCenter();
-    span {
-      flex: 1;
-      .ellipsis();
-    }
-    i {
-      text-align: center;
-      width: 2rem;
-      display: inline-block;
-    }
-  }
-  .add-btn {
-    height: 1.6rem;
-    line-height: 1.6rem;
-    padding: 0 2rem;
-    color: #fff;
-    background: #3b48ee;
-    border-radius: 0.2rem;
-  }
+}
+.personType-wrapper li {
+  padding-left: 2rem;
+  height: 3rem;
+  line-height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.personType-wrapper li.active {
+  background: #fff;
+  color: #ea4c00;
+}
+.personType-wrapper .single-persontype {
+  box-sizing: border-box;
+  max-width: 100%;
+  position: relative;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  padding: 0 0.5rem 0 1rem;
+  border-radius: 0.8rem;
+  background: #a8b4c4;
+  color: #fff;
+  margin-right: 1rem;
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personType-wrapper .single-persontype span {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.personType-wrapper .single-persontype i {
+  text-align: center;
+  width: 2rem;
+  display: inline-block;
+}
+.personType-wrapper .add-btn {
+  height: 1.6rem;
+  line-height: 1.6rem;
+  padding: 0 2rem;
+  color: #fff;
+  background: #3b48ee;
+  border-radius: 0.2rem;
 }
 </style>

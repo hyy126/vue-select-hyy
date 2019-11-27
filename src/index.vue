@@ -60,7 +60,7 @@ export default {
   props: {
     listTitle: {
       default: "请选择分类",
-      type:String
+      type: String
     },
     wrapperHeight: {
       default: "70%",
@@ -252,47 +252,43 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style  scoped>
 .selector-wrapper {
   position: fixed;
   left: 0;
-  //bottom: -65%;
   z-index: 3;
   width: 100%;
-  //height: 65%;
   background-color: #fff;
   transition: all 0.4s;
   display: flex;
   flex-wrap: wrap;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  section {
-    width: 100%;
-  }
-  .title {
-    height: 3rem;
-    text-align: center;
-    line-height: 3rem;
-    i {
-      position: absolute;
-      right: 0.5rem;
-      font-size: 1.3rem;
-    }
-  }
-  .TimePage {
-    box-sizing: border-box;
-    padding-top: 1rem;
-    //height: 8rem;
-    //height: auto;
-  }
-  .List {
-    //height: calc(~"100% - 10rem");
-    // position: absolute;
-    // height: 100%;
-    //flex: 1;
-  }
+}
+.selector-wrapper section {
+  width: 100%;
+}
+.selector-wrapper .title {
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+}
+.selector-wrapper .title i {
+  position: absolute;
+  right: 0.5rem;
+  font-size: 1.3rem;
+}
+.selector-wrapper .TimePage {
+  box-sizing: border-box;
+  padding-top: 1rem;
 }
 .mask {
-  .mask();
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s;
 }
 </style>

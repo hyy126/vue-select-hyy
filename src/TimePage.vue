@@ -63,47 +63,47 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style  scoped>
 .selector-timepage-wrapper {
   padding-left: 1rem;
-
-  .timepage-single {
-    //height: 2.5rem;
-    position: relative;
-    div {
-      position: absolute;
-    }
-    .name {
-      width: 90%;
-      .ellipsis();
-      top: -0.6rem;
-      height: 1.2rem;
-      line-height: 1.2rem;
-      left: 2rem;
-      &.active {
-        color: @orangewarningColor;
-      }
-    }
-    .leftLine {
-      width: 0.1rem;
-      background: @orangewarningColor;
-      height: 100%;
-      left: -0.05rem;
-    }
-    .circle {
-      z-index: 2;
-      border-radius: 50%;
-      left: -0.25rem;
-      top: -0.25rem;
-      width: 0.5rem;
-      height: 0.5rem;
-      background: @orangewarningColor;
-      border: 1px solid @orangewarningColor;
-      box-sizing: border-box;
-      &.active {
-        background: #fff;
-      }
-    }
-  }
+}
+.selector-timepage-wrapper .timepage-single {
+  position: relative;
+}
+.selector-timepage-wrapper .timepage-single div {
+  position: absolute;
+}
+.selector-timepage-wrapper .timepage-single .name {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  top: -0.6rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  left: 2rem;
+}
+.selector-timepage-wrapper .timepage-single .name.active {
+  color: #ea4c00;
+}
+.selector-timepage-wrapper .timepage-single .leftLine {
+  width: 0.1rem;
+  background: #ea4c00;
+  height: 100%;
+  left: -0.05rem;
+}
+.selector-timepage-wrapper .timepage-single .circle {
+  z-index: 2;
+  border-radius: 50%;
+  left: -0.25rem;
+  top: -0.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #ea4c00;
+  border: 1px solid #ea4c00;
+  box-sizing: border-box;
+}
+.selector-timepage-wrapper .timepage-single .circle.active {
+  background: #fff;
 }
 </style>

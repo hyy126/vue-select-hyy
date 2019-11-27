@@ -4,7 +4,7 @@
  * @author Hyy
  *
  * Created at     : 2019-11-27 12:47:00
- * Last modified  : 2019-11-27 13:35:21
+ * Last modified  : 2019-11-27 14:55:30
  */
 
 let VueCasCadeSelect = require("./src/index.vue");
@@ -25,7 +25,7 @@ loadIconCss();
 function loadIconCss() {
   let head = document.getElementsByTagName("head")[0];
   let link = document.createElement("link");
-  link.href = "./assets/iconfont.css";
+  link.href = "//at.alicdn.com/t/font_1516223_7p4oh77g1xu.css";
   link.rel = "stylesheet";
   link.type = "text/css";
   head.appendChild(link);
